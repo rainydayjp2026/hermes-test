@@ -1,0 +1,6 @@
+GEMINI_API_KEY=
+SA_CLIENT_EMAIL=xxx@yyy.iam.gserviceaccount.com
+# 鍵JSONの private_key をそのまま（\n を含む1行のまま）貼る
+SA_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n"
+DRIVE_FOLDER_ID=
+APP_SHARED_TOKEN=

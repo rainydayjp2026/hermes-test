@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ocr-inbox",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  // 画像や本文はログに出さない。ステータスと処理時間のみ console.log する。
+  "observability": { "enabled": true },
+  "vars": {
+    // AI Studio のモデル一覧に表示される ID をそのまま設定する
+    "GEMINI_MODEL": "gemini-flash-3.8"
+  }
+  // Secrets（wrangler secret put で登録）:
+  //   GEMINI_API_KEY, SA_CLIENT_EMAIL, SA_PRIVATE_KEY, DRIVE_FOLDER_ID, APP_SHARED_TOKEN
+}
