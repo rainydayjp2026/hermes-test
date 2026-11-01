@@ -1,0 +1,16 @@
+{
+  "name": "ocr-inbox-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261101.1",
+    "typescript": "~6.0.3",
+    "wrangler": "^4.156.0"
+  }
+}
